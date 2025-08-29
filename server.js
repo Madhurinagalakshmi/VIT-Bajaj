@@ -8,7 +8,9 @@ const userInformation = {
 
 // Middleware --- parses the incoming JSON requests.
 app.use(express.json());
-
+app.get('/', (req, res) => {
+    res.send('API is running successfully!');
+});
 app.post('/bfhl', (req, res) => {
     try {
         const { data } = req.body;
@@ -105,4 +107,5 @@ app.post('/bfhl', (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+
 });
