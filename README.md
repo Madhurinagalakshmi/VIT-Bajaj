@@ -10,7 +10,7 @@ Framework: Express.js
 API Endpoint
 Method: POST
 Route: /bfhl
-
+Base URL --  https://vit-bajaj.onrender.com/bfhl
 The server will run on http://localhost:3000.
 
 Example Usage
